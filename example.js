@@ -34,12 +34,12 @@
 //    arr[k]();
 //}
 
-try {
-    var i = 0;
-} catch(e) {
-} finally {
-    
-}
+//try {
+//    var i = 0;
+//} catch(e) {
+//} finally {
+//    
+//}
 
 //a = new b();
 //
@@ -61,3 +61,9 @@ try {
 //        break;
 //}
 
+
+var a = 1;
+var b = 1;
+for (var i = 0; i < 5; i++) {
+    b += a - 1 + 2 / 3;
+}
