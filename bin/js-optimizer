@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var jsOptimizer = require('..');
+
+var input = process.argv[2] || '/dev/stdin';
+var output = process.argv[3];
+
+var script = jsOptimizer.optimize(fs.readFileSync(input).toString());
+
+if (typeof output == 'string') {
+    fs.writeFileSync(output, script);
+} else {
+    process.stdout.write(script);
+    process.stdout.write("\n");
+}

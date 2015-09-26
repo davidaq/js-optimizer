@@ -35,30 +35,29 @@
 //}
 
 try {
-
+    var i = 0;
 } catch(e) {
-
 } finally {
     
 }
 
-a = new b();
-
-a = 1, b = 2, b()
-
-c = a > 2 ? a-1 : b;
-
-while(false) {
-    continue;
-}
-switch(a) {
-    case 1:
-        break;
-    case 2:
-        break;
-    case 3:
-        break;
-    default:
-        break;
-}
+//a = new b();
+//
+//a = 1, b = 2, b()
+//
+//c = a > 2 ? a-1 : b;
+//
+//while(false) {
+//    continue;
+//}
+//switch(a) {
+//    case 1:
+//        break;
+//    case 2:
+//        break;
+//    case 3:
+//        break;
+//    default:
+//        break;
+//}
 
