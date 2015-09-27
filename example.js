@@ -67,3 +67,14 @@ var b = 1;
 for (var i = 0; i < 5; i++) {
     b += a - 1 + 2 / 3;
 }
+function A() {
+    var c = 1;
+    return function(a) {
+        return a() + c;
+    };
+}
+
+var fA = A();
+fA(function() {
+    return 0;
+});
