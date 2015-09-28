@@ -1,4 +1,3 @@
-
 var mods = [
     'parse',
     'deparse',
@@ -6,7 +5,13 @@ var mods = [
     'optimize',
 ];
 
-for (var k in mods) {
-    var mod = mods[k];
-    exports[mod] = require('./lib/' + mod);
+try {
+    module.exports = require('./lib/optimize');
+
+    for (var k in mods) {
+        var mod = mods[k];
+        module.exports[mod] = require('./lib/' + mod);
+    }
+} catch(e) {
+    console.warn(e.stack);
 }
