@@ -79,11 +79,9 @@ var fA = A();
 console.log(fA(function() {
     return 0;
 }));
+var e = 0;
 try {
-    
+    throw new Error('err');
 } catch(e) {
-
-}
-with(b) {
-
+    console.log(e);
 }
