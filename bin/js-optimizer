@@ -6,7 +6,13 @@ var jsOptimizer = require('..');
 var input = process.argv[2] || '/dev/stdin';
 var output = process.argv[3];
 
-var script = jsOptimizer.optimize(fs.readFileSync(input).toString());
+var script = fs.readFileSync(input).toString();
+try {
+    script = jsOptimizer.optimize(script);
+} catch(e) {
+    console.warn(e.message);
+    return;
+}
 
 if (typeof output == 'string') {
     fs.writeFileSync(output, script);

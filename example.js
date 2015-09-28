@@ -1,3 +1,4 @@
+"use strict"
 //function hello(arg) {
 //    var c = {console:console,b:[1,2,3]};
 //    var arr = [1,2,c, {a:1}];
@@ -75,6 +76,14 @@ function A() {
 }
 
 var fA = A();
-fA(function() {
+console.log(fA(function() {
     return 0;
-});
+}));
+try {
+    
+} catch(e) {
+
+}
+with(b) {
+
+}
