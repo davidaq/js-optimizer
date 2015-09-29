@@ -63,25 +63,28 @@
 //}
 
 
-var a = 1;
-var b = 1;
-for (var i = 0; i < 5; i++) {
-    b += a - 1 + 2 / 3;
-}
-function A() {
-    var c = 1;
-    return function(a) {
-        return a() + c;
-    };
-}
+//var a = 1;
+//var b = 1;
+//for (var i = 0; i < 5; i++) {
+//    b += a - 1 + 2 / 3;
+//}
+//function A() {
+//    var c = 1;
+//    return function(a) {
+//        return a() + c;
+//    };
+//}
+//
+//var fA = A();
+//console.log(fA(function() {
+//    return 0;
+//}));
+//var e = 0;
+//try {
+//    throw new Error('err');
+//} catch(e) {
+//    console.log(e);
+//}
 
-var fA = A();
-console.log(fA(function() {
-    return 0;
-}));
-var e = 0;
-try {
-    throw new Error('err');
-} catch(e) {
-    console.log(e);
-}
+b=(c==(a=1 + (b - a) / 5) * (true ? 1 : 0 + 1))
+
