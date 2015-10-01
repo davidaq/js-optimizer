@@ -10,8 +10,8 @@ var script = fs.readFileSync(input).toString();
 try {
     script = jsOptimizer.optimize(script);
 } catch(e) {
-    console.warn(e.message);
-    return;
+    console.warn(e.stack);
+    process.exit(1);
 }
 
 if (typeof output == 'string') {

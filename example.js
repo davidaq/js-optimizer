@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 //function hello(arg) {
 //    var c = {console:console,b:[1,2,3]};
 //    var arr = [1,2,c, {a:1}];
@@ -86,5 +86,30 @@
 //    console.log(e);
 //}
 
-b=(c==(a=1 + (b - a) / 5) * (true ? 1 : 0 + 1))
+//b=(c==(a=1 + (b - a) / 5) * (true ? 1 : 0 + 1))
 
+//var A = 2;
+//function f() {
+//    var B = 3, C = 2;
+//    {
+//        return 1;
+//    }
+//    b=1;
+//}
+//
+//if (false) {
+//    a = 1;
+//} else {
+//    a = b;
+//}
+//
+//do {
+//    a = 1;
+//} while(false);
+//'1' + '2'
+
+function A() {
+    var a = 1;
+    var b = a;
+}
+A();
