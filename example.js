@@ -108,8 +108,16 @@
 //} while(false);
 //'1' + '2'
 
+var z = 0;
 function A() {
-    var a = 1;
-    var b = a;
 }
-A();
+(function() {
+    function B() {}
+    var d = 1;
+    function A(c) {
+        var a = 1;
+        var b = a;
+        return d;
+    }
+    return A() + z;
+})();
